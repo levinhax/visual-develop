@@ -1,0 +1,24 @@
+{
+  "htmlLists": [
+    {
+      "listName": "html示例一",
+      "listUrl": "https://www.baidu.com"
+    }
+  ],
+  "barLists": [
+    {
+      "listName": "简单柱形图",
+      "listUrl": "http://localhost:8080/basebarchart"
+    },
+    {
+      "listName": "基础柱状图",
+      "listUrl": "http://localhost:8080/basisbarchart"
+    }
+  ],
+  "mapLists": [
+    {
+      "listName": "地图示例一",
+      "listUrl": "https://www.baidu.com"
+    }
+  ]
+}

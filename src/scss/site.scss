@@ -1,0 +1,59 @@
+@import 'variables.scss';
+*,
+*::before,
+*::after {
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  color: $main-color;
+  background: $main-background;
+  user-select: none;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:active,
+a:visited,
+a[tabindex='-1']:focus {
+  outline: 0 none;
+}
+
+a:hover {
+  outline: 0 none;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #666;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-button,
+::-webkit-resizer {
+  display: none;
+}
