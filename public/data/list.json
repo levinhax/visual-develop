@@ -13,6 +13,14 @@
     {
       "listName": "基础柱状图",
       "listUrl": "http://localhost:8080/basisbarchart"
+    },
+    {
+      "listName": "基础面积图",
+      "listUrl": "http://localhost:8080/areachart"
+    },
+    {
+      "listName": "基础折线图",
+      "listUrl": "http://localhost:8080/linechart"
     }
   ],
   "mapLists": [

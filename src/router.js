@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import BaseBarChartView from './views/base-bar-chart-view.vue'
 import BasisBarChartView from './views/basis-bar-chart-view.vue'
+import AreaChartView from './views/area-chart-view.vue'
+import LineChartView from './views/line-chart-view.vue'
 
 Vue.use(Router)
 
@@ -32,6 +34,16 @@ export default new Router({
       path: '/basisbarchart',
       name: 'basisbarchart',
       component: BasisBarChartView
+    },
+    {
+      path: '/areachart',
+      name: 'areachart',
+      component: AreaChartView
+    },
+    {
+      path: '/linechart',
+      name: 'linechart',
+      component: LineChartView
     }
   ]
 })
