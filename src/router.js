@@ -5,6 +5,7 @@ import BaseBarChartView from './views/base-bar-chart-view.vue'
 import BasisBarChartView from './views/basis-bar-chart-view.vue'
 import AreaChartView from './views/area-chart-view.vue'
 import LineChartView from './views/line-chart-view.vue'
+import PieChartView from './views/pie-chart-view.vue'
 
 Vue.use(Router)
 
@@ -44,6 +45,11 @@ export default new Router({
       path: '/linechart',
       name: 'linechart',
       component: LineChartView
+    },
+    {
+      path: '/piechart',
+      name: 'piechart',
+      component: PieChartView
     }
   ]
 })

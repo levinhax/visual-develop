@@ -21,6 +21,10 @@
     {
       "listName": "基础折线图",
       "listUrl": "http://localhost:8080/linechart"
+    },
+    {
+      "listName": "基础饼图",
+      "listUrl": "http://localhost:8080/piechart"
     }
   ],
   "mapLists": [
