@@ -1,8 +1,8 @@
 {
   "htmlLists": [
     {
-      "listName": "html示例一",
-      "listUrl": "https://www.baidu.com"
+      "listName": "进度条",
+      "listUrl": "http://localhost:8080/htmlprogress"
     }
   ],
   "barLists": [
@@ -25,6 +25,10 @@
     {
       "listName": "基础饼图",
       "listUrl": "http://localhost:8080/piechart"
+    },
+    {
+      "listName": "环形进度条",
+      "listUrl": "http://localhost:8080/radialprogresschart"
     }
   ],
   "mapLists": [

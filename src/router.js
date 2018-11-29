@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import htmlProgressView from './views/html-progress-view.vue'
 import BaseBarChartView from './views/base-bar-chart-view.vue'
 import BasisBarChartView from './views/basis-bar-chart-view.vue'
 import AreaChartView from './views/area-chart-view.vue'
 import LineChartView from './views/line-chart-view.vue'
 import PieChartView from './views/pie-chart-view.vue'
+import radialProgressChartView from './views/radial-progress-chart-view.vue'
 
 Vue.use(Router)
 
@@ -25,6 +27,11 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+    },
+    {
+      path: '/htmlprogress',
+      name: 'htmlprogress',
+      component: htmlProgressView
     },
     {
       path: '/basebarchart',
@@ -50,6 +57,11 @@ export default new Router({
       path: '/piechart',
       name: 'piechart',
       component: PieChartView
+    },
+    {
+      path: '/radialprogresschart',
+      name: 'radialprogresschart',
+      component: radialProgressChartView
     }
   ]
 })
