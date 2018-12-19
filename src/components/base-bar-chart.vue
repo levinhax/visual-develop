@@ -7,7 +7,7 @@
 <style lang="sass" scoped>
 @import '../scss/variables.scss'
 .baseBarChart
-  border: 1px dashed $borderColor2
+  border: 1px dashed $borderColor4
 </style>
 
 <script>

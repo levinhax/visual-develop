@@ -7,7 +7,7 @@
 <style lang="sass" scoped>
 @import '../scss/variables.scss'
 .radialProgressChart
-  border: 1px dashed $borderColor5
+  border: 1px dashed $borderColor4
 </style>
 
 <script>

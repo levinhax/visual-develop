@@ -1,6 +1,6 @@
 # visual-develop
 
-> d3.js vue.js Visualization components  (Vue 结合 D3.js 进行数据可视化开发案例的封装)
+> d3.js 高德地图 vue.js Visualization components  (Vue 结合 D3.js, 高德地图 进行数据可视化开发案例的封装)
 
 d3.js + Vue 组件封装，探索数据可视化
 
@@ -22,6 +22,8 @@ d3.js + Vue 组件封装，探索数据可视化
 - 环形进度条
 
 #### 地图组件
+
+- 高德地图-基础
 
 ## Project setup
 ```

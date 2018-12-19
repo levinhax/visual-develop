@@ -7,7 +7,7 @@
 <style lang="sass" scoped>
 @import '../scss/variables.scss'
 .areaChart
-  border: 1px dashed $borderColor2
+  border: 1px dashed $borderColor3
 </style>
 
 <script>

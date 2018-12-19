@@ -1,13 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+
 import htmlProgressView from './views/html-progress-view.vue'
+
 import BaseBarChartView from './views/base-bar-chart-view.vue'
 import BasisBarChartView from './views/basis-bar-chart-view.vue'
 import AreaChartView from './views/area-chart-view.vue'
 import LineChartView from './views/line-chart-view.vue'
 import PieChartView from './views/pie-chart-view.vue'
 import radialProgressChartView from './views/radial-progress-chart-view.vue'
+
+import amapBasisView from './views/amap-basis-view.vue'
 
 Vue.use(Router)
 
@@ -29,11 +33,13 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
+      // html 组件
       path: '/htmlprogress',
       name: 'htmlprogress',
       component: htmlProgressView
     },
     {
+      // 图表组件
       path: '/basebarchart',
       name: 'basebarchart',
       component: BaseBarChartView
@@ -62,6 +68,12 @@ export default new Router({
       path: '/radialprogresschart',
       name: 'radialprogresschart',
       component: radialProgressChartView
+    },
+    {
+      // 地图组件
+      path: '/amapbasis',
+      name: 'amapbasis',
+      component: amapBasisView
     }
   ]
 })

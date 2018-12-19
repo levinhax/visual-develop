@@ -7,7 +7,7 @@
 <style lang="sass" scoped>
 @import '../scss/variables.scss'
 .lineChart
-  border: 1px dashed $borderColor2
+  border: 1px dashed $borderColor4
 path
   fill: none
   stroke: steelblue

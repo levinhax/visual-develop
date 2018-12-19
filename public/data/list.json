@@ -33,8 +33,8 @@
   ],
   "mapLists": [
     {
-      "listName": "地图示例一",
-      "listUrl": "https://www.baidu.com"
+      "listName": "高德地图-基础",
+      "listUrl": "http://localhost:8080/amapbasis"
     }
   ]
 }
