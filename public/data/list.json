@@ -35,6 +35,10 @@
     {
       "listName": "高德地图-基础",
       "listUrl": "http://localhost:8080/amapbasis"
+    },
+    {
+      "listName": "高德2D地图",
+      "listUrl": "http://localhost:8080/amap2d"
     }
   ]
 }

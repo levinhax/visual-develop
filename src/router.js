@@ -12,6 +12,7 @@ import PieChartView from './views/pie-chart-view.vue'
 import radialProgressChartView from './views/radial-progress-chart-view.vue'
 
 import amapBasisView from './views/amap-basis-view.vue'
+import amap2DView from './views/amap-2d-view.vue'
 
 Vue.use(Router)
 
@@ -74,6 +75,11 @@ export default new Router({
       path: '/amapbasis',
       name: 'amapbasis',
       component: amapBasisView
+    },
+    {
+      path: '/amap2d',
+      name: 'amap2d',
+      component: amap2DView
     }
   ]
 })
