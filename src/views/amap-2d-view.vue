@@ -10,9 +10,11 @@
           :key="option.index"
         >{{ option.text }}</option>
       </select>
-      <span>Selected: {{ selected }}</span>
-      <amap2-d-autocomplete v-if="selected==1"></amap2-d-autocomplete>
-      <amap2-d-navigation v-if="selected==2"></amap2-d-navigation>
+      <span v-if="false">Selected: {{ selected }}</span>
+      <amap2-d-weather v-if="selected==1"></amap2-d-weather>
+      <amap2-d-autocomplete v-if="selected==2"></amap2-d-autocomplete>
+      <amap2-d-navigation v-if="selected==3"></amap2-d-navigation>
+      <amap2-d-grasproad v-if="selected==4"></amap2-d-grasproad>
     </nav>
   </div>
 </template>
@@ -35,14 +37,15 @@ nav option
   line-height: 20px
 nav select:focus
   border: 1px solid #ddd
-  box-shadow: 0 0 8px 1px #DDD
 nav option:hover
   background: #EBCCD1
 </style>
 
 <script>
+import amap2DWeather from '@/components/amap-2d-weather'
 import amap2DNavigation from '@/components/amap-2d-navigation'
 import amap2DAutocomplete from '@/components/amap-2d-autocomplete'
+import amap2DGrasproad from '../components/amap-2d-grasproad'
 export default {
   name: "amap2DView",
   data() {
@@ -50,23 +53,29 @@ export default {
       selected: 1,
       options: [
         {
-          text: "输入提示与POI搜索",
+          text: "天气查询",
           value: 1
         },
         {
-          text: "路线规划",
+          text: "输入提示与POI搜索",
           value: 2
         },
         {
-          text: "轨迹纠偏",
+          text: "路线规划",
           value: 3
+        },
+        {
+          text: "轨迹纠偏",
+          value: 4
         }
       ]
     };
   },
   components: {
+      amap2DWeather,
       amap2DAutocomplete,
-      amap2DNavigation
+      amap2DNavigation,
+      amap2DGrasproad
   }
 };
 </script>
